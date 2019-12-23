@@ -2,6 +2,7 @@
 <Shell xmlns="http://xamarin.com/schemas/2014/forms"
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
        FlyoutBackgroundImage="photo.jpg"
+       xmlns:views1="clr-namespace:RoutingInShell.Views" 
        FlyoutBackgroundImageAspect="AspectFill"
        FlyoutHeaderBehavior="CollapseOnScroll"
        x:Class="RoutingInShell.AppShell">
@@ -53,5 +54,35 @@
         </Style>
     </Shell.Resources>
 
+    <TabBar>
+        <Tab Title="Tab1">
+            <ShellContent
+                Route="Tab1" 
+                Shell.NavBarIsVisible="True" >
+                <views1:Tab1 Title="Tab1"/>
+            </ShellContent>
+        </Tab>
+        <Tab Title="Tab2">
+            <ShellContent 
+                Route="Tab2" 
+                Shell.NavBarIsVisible="True" >
+                <views1:Tab2 Title="Tab2"/>
+            </ShellContent>
+        </Tab>
+       <Tab Title="Tab3">
+            <ShellContent 
+                Route="Tab3" 
+                Shell.NavBarIsVisible="True" >
+                <views1:Tab3 Title="Tab3"/>
+            </ShellContent>
+        </Tab>
+        <Tab Title="Tab4">
+            <ShellContent 
+                Route="Tab4" 
+                Shell.NavBarIsVisible="True" >
+                <views1:Tab4 Title="Tab4" />
+            </ShellContent>
+        </Tab>
+    </TabBar>
    
 </Shell>
