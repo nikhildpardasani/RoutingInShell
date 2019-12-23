@@ -11,5 +11,20 @@ namespace RoutingInShell.Views
         {
             InitializeComponent();
         }
+
+        void OnButton1Clicked(object sender, EventArgs args)
+        {
+            Shell.Current.GoToAsync("Tab2/Tab2A");
+        }
+
+        void OnButton2Clicked(object sender, EventArgs args)
+        {
+            Shell.Current.GoToAsync("Tab2/Tab2B");
+        }
+
+        void OnButton3Clicked(object sender, EventArgs args)
+        {
+            Shell.Current.GoToAsync("Tab2/Tab2C");
+        }
     }
 }
